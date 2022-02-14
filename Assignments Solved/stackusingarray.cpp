@@ -17,7 +17,7 @@ void print(){
    if(stacktop>=0){
       cout<<"Stacks items are:"<<" ";
       for (int i=stacktop;i>=0;i--)
-      cout<<stacky[i]<<" "<<endl;
+      cout<<stacky[i]<<" ";
       cout<<endl;
    }else{
       cout<<"Empty Stack";
@@ -33,17 +33,14 @@ void push(int val){
 }
 
 int main(){
-   push(82);
+   push(56);
    
-   push(39);
+   push(45);
    
-   push(120);
+   push(68);
   
    print();
-
+   cout<<endl;
    pop();
-//    pop();
-//    pop();
-//    pop();
    print();
 }

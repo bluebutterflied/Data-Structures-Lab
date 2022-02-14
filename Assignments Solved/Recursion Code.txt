@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void myFun(int *p, int *start, int *stop){
+    cout<<*p<<endl;
+    if(p==start-1){
+        return;
+        }
+        
+        myFun(++p,start,stop);
+        if(p == start-1){
+          return;
+        }
+        myFun(--p, start, stop);
+}
+int main(){
+    int arr[] = {1,2,3,4,5,6};
+    myFun(&arr[3], arr, arr+5);
+    return 0;
+}
+    
